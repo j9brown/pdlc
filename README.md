@@ -41,7 +41,7 @@ Make sure the supply is turned off while making these connections.
 
 Connect `12V` and one `GND` terminal to a 10 to 16 V DC supply using 20 AWG (0.5 mm^2) wire or larger.  Pay attention to the polarity: `12V` is positive and `GND` is negative.  We recommend adding a 3 A fuse or circuit breaker to protect the wiring to the device.
 
-Connect `OUTA` and `OUTB` to the PDLC film using 22 AWG (0.3 mm^2) wire or larger.  Either terminal can be connected to the PDLC film in either orientation because the film uses AC and there is no distinct polarity.  These wires carry enough voltage to deliver a small electric shock that could be harmful to people so please ensure that the wires are adequately insulated and not exposed.
+Connect `OUTA` and `OUTB` to the PDLC film using 22 AWG (0.3 mm^2) wire or larger.  Either terminal can be connected to the PDLC film in either orientation because the film uses AC and there is no distinct polarity.  These wires carry enough voltage to deliver a small electric shock that could be harmful to people so please ensure that the wires are adequately insulated and not exposed to touch.
 
 Connect `EN` to one `GND` terminal via a switch circuit, via a short jumper wire, or by soldering the `ENABLE` jumper closed.  The `EN` terminal is active low so the driver turns on when `EN` is grounded and turn offs otherwise.  Use 24 AWG (0.2 mm^2) wire or larger to make the connection.  Smaller wires will work but may be too fragile for the terminals.
 
@@ -55,7 +55,7 @@ Supply:
 - Wiring: minimum 20 AWG (0.5 mm²)
 - Circuit protection
   - Internal: built-in 2 A polyfuse, transient voltage suppressor, reverse polarity protection, and under voltage lock-out below 9 V
-  - External: recommend adding a 3 A fuse or circuit breaker to protect the wiring to the device
+  - External: add a 3 A fuse or circuit breaker to protect the wiring to the device
 
 Load:
 
@@ -64,7 +64,7 @@ Load:
 - Power output: 18 W maximum continuous load
 - Circuit protection
   - Internal: built-in overload, over voltage, and over temperature protection
-  - External: none required
+  - External: ensure wires are adequately insulated and not exposed to touch
 
 In case of an overload such as exceeding the maximum output current or a short circuit, the power supply will hiccup until the overload condition is removed.
 
