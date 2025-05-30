@@ -987,7 +987,7 @@
 					)
 				)
 				(pin output line
-					(at 12.7 -41.91 180)
+					(at 12.7 -5.08 180)
 					(length 2.54)
 					(name "PGOOD"
 						(effects
@@ -1015,24 +1015,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -10.16 0)
-					(length 2.54)
-					(name "EN/UVLO/SYNC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1120,6 +1102,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -10.16 0)
+					(length 2.54)
+					(name "EN/UVLO/SYNC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1920,10 +1920,6 @@
 		(color 0 0 0 0)
 		(uuid "fae28ed9-52b8-4a28-bf60-09b0df522817")
 	)
-	(no_connect
-		(at 191.77 120.65)
-		(uuid "19511467-b41a-44df-80ad-35094313ab42")
-	)
 	(wire
 		(pts
 			(xy 165.1 81.28) (xy 166.37 81.28)
@@ -2123,6 +2119,16 @@
 			(type default)
 		)
 		(uuid "3ea9ed54-8a62-4c18-b882-e15301183b51")
+	)
+	(wire
+		(pts
+			(xy 191.77 83.82) (xy 195.58 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f5a31d6-b605-492b-8303-e9929b09fcdd")
 	)
 	(wire
 		(pts
@@ -2336,6 +2342,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 87.63) (xy 34.29 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6433e33c-9960-46e7-8351-4fb78f527ff9")
+	)
+	(wire
+		(pts
 			(xy 58.42 116.84) (xy 58.42 118.11)
 		)
 		(stroke
@@ -2436,16 +2452,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 80.01) (xy 49.53 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c3ca7f3-3083-45a4-80b5-991492f6f1ef")
-	)
-	(wire
-		(pts
 			(xy 227.33 66.04) (xy 243.84 66.04)
 		)
 		(stroke
@@ -2476,16 +2482,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 78.74) (xy 58.42 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "845eebbd-69f2-4655-8cff-99a2a7bed049")
-	)
-	(wire
-		(pts
 			(xy 149.86 68.58) (xy 152.4 68.58)
 		)
 		(stroke
@@ -2493,6 +2489,16 @@
 			(type default)
 		)
 		(uuid "89006511-ac25-492c-88ee-ba20abf972e7")
+	)
+	(wire
+		(pts
+			(xy 34.29 78.74) (xy 58.42 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "920c178d-9f76-44fa-a680-21a65856a7dd")
 	)
 	(wire
 		(pts
@@ -2676,16 +2682,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 87.63) (xy 49.53 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf5bd7fe-1273-4811-8e75-231b9c9c2cc1")
-	)
-	(wire
-		(pts
 			(xy 193.04 66.04) (xy 191.77 66.04)
 		)
 		(stroke
@@ -2703,6 +2699,16 @@
 			(type default)
 		)
 		(uuid "d934d08b-d338-407b-b4da-f48684cfdd80")
+	)
+	(wire
+		(pts
+			(xy 34.29 78.74) (xy 34.29 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfe96f6b-8141-4672-9b5e-fa966c982d36")
 	)
 	(wire
 		(pts
@@ -2843,9 +2849,9 @@
 		)
 		(uuid "1ad33c83-61e8-4333-85bb-44de4e6a212f")
 	)
-	(text "Designed using TI WebBench with the following parameters\n- Vin = 10 to 16 V\n- Vout = 300 mA at 61 V\n- Temp = 30 C\n- Spread spectrum = Enabled\n- UVLO = Enabled, run at 9 V, stop at 8 V\n- Switching frequency = 1.055 MHz\n- Soft start time = 1.6 ms\n\nSome component values adjusted to use JLCPCB PCBA \"basic\"\nparts while preserving the overall design intent.\n\nFBT and FBB determine the output voltage according to the equation\n  V = (FBT / FBB) + 1\nTo change the output voltage, replace FBT with a different value"
+	(text "Designed using TI WebBench with the following parameters\n- Vin = 10 to 16 V\n- Vout = 300 mA at 61 V\n- Temp = 30 C\n- Spread spectrum = Enabled\n- UVLO = Enabled, run at 9 V, stop at 8 V\n- Switching frequency = 1.055 MHz\n- Soft start time = 1.6 ms\n\nHiccup mode enabled for overload protection\n\nSome component values adjusted to prefer JLCPCB PCBA \"basic\" parts\n\nFBT and FBB determine the output voltage according to the equation\n  V = (FBT / FBB) + 1\nTo change the output voltage, replace FBT with a different value\n\nThe absolute maximum output voltage of LM5158 is 85 V"
 		(exclude_from_sim no)
-		(at 199.39 96.52 0)
+		(at 196.85 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2932,6 +2938,28 @@
 		(uuid "9f63cec0-7839-4272-bfbe-71fe4ee0d604")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 259.1019 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PGOOD"
+		(shape output)
+		(at 195.58 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b56b896f-3c5f-4724-9ca7-accc80a94514")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.0362 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3272,7 +3300,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12cf4b00-55f5-46a7-bbef-4393cf7b7853")
-		(property "Reference" "JP3"
+		(property "Reference" "JP2"
 			(at 35.941 110.5478 90)
 			(effects
 				(font
@@ -3336,7 +3364,7 @@
 		(instances
 			(project ""
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "JP3")
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -3449,7 +3477,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c6d5fb9-dbc5-4256-bdaa-e30a7ebd8f31")
-		(property "Reference" "R4"
+		(property "Reference" "R3"
 			(at 212.598 77.6435 0)
 			(effects
 				(font
@@ -3530,7 +3558,7 @@
 		(instances
 			(project "pdlc"
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "R4")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -3546,7 +3574,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2426ebb7-f517-47d6-83f6-77c88e1736cc")
-		(property "Reference" "R11"
+		(property "Reference" "R10"
 			(at 104.648 111.8757 0)
 			(effects
 				(font
@@ -3618,7 +3646,7 @@
 		(instances
 			(project ""
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "R11")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -3731,7 +3759,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38e4ef54-0bdd-4c5b-a474-ab6835d9c54d")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR07"
 			(at 153.67 68.58 0)
 			(effects
 				(font
@@ -3782,7 +3810,7 @@
 		(instances
 			(project ""
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "#PWR09")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -3798,8 +3826,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a317b5f-9919-495f-9f4a-68dfa336cbe0")
-		(property "Reference" "R9"
-			(at 60.198 109.3935 0)
+		(property "Reference" "R8"
+			(at 60.198 110.6057 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3808,7 +3836,7 @@
 			)
 		)
 		(property "Value" "20K"
-			(at 60.198 111.8178 0)
+			(at 60.198 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3850,10 +3878,11 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Rating" "50V"
-			(at 60.198 116.6664 0)
+			(at 60.198 115.4543 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3870,7 +3899,7 @@
 		(instances
 			(project "pdlc"
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "R9")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -3984,7 +4013,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57ab9cde-138a-46af-a55c-0e10a09ddb11")
-		(property "Reference" "R7"
+		(property "Reference" "R6"
 			(at 60.198 100.4457 0)
 			(effects
 				(font
@@ -4056,7 +4085,7 @@
 		(instances
 			(project "pdlc"
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "R7")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -4072,7 +4101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e9e9e49-8029-47af-b38d-241e26cd6dce")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR012"
 			(at 165.1 133.35 0)
 			(effects
 				(font
@@ -4122,7 +4151,7 @@
 		(instances
 			(project "pdlc"
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "#PWR014")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -4138,7 +4167,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63bca1ef-d3a5-41b8-abb4-c917164a7336")
-		(property "Reference" "R3"
+		(property "Reference" "R2"
 			(at 212.598 67.4835 0)
 			(effects
 				(font
@@ -4219,7 +4248,7 @@
 		(instances
 			(project "pdlc"
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "R3")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -4313,7 +4342,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 49.53 83.82 0)
+		(at 34.29 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4321,8 +4350,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75eed6be-d6b6-422b-b76d-3c7b21625cd6")
-		(property "Reference" "R5"
-			(at 51.308 81.3957 0)
+		(property "Reference" "R4"
+			(at 36.068 81.3957 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4331,7 +4360,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 51.308 83.82 0)
+			(at 36.068 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4340,7 +4369,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 47.752 83.82 90)
+			(at 32.512 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4349,7 +4378,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 83.82 0)
+			(at 34.29 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4358,7 +4387,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 49.53 83.82 0)
+			(at 34.29 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4367,7 +4396,7 @@
 			)
 		)
 		(property "LCSC" "C25741"
-			(at 49.53 83.82 0)
+			(at 34.29 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4376,7 +4405,7 @@
 			)
 		)
 		(property "Rating" "50V"
-			(at 51.308 86.2443 0)
+			(at 36.068 86.2443 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4393,7 +4422,7 @@
 		(instances
 			(project "pdlc"
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "R5")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -4603,7 +4632,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8db0589a-16dd-4e94-b197-e9378aa74dbd")
-		(property "Reference" "R8"
+		(property "Reference" "R7"
 			(at 154.178 106.7957 0)
 			(effects
 				(font
@@ -4675,7 +4704,7 @@
 		(instances
 			(project "pdlc"
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "R8")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -4691,7 +4720,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "96832949-2e03-4bb4-84cf-633d5813359c")
-		(property "Reference" "R6"
+		(property "Reference" "R5"
 			(at 44.45 83.8553 90)
 			(effects
 				(font
@@ -4699,7 +4728,7 @@
 				)
 			)
 		)
-		(property "Value" "100K"
+		(property "Value" "20K"
 			(at 44.45 86.2796 90)
 			(effects
 				(font
@@ -4734,7 +4763,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25741"
+		(property "LCSC" "C25765"
 			(at 44.45 91.44 0)
 			(effects
 				(font
@@ -4760,7 +4789,7 @@
 		(instances
 			(project "pdlc"
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "R6")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4776,7 +4805,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f959c35-325f-4426-a894-d9ed6393b037")
-		(property "Reference" "R10"
+		(property "Reference" "R9"
 			(at 88.138 111.8757 0)
 			(effects
 				(font
@@ -4785,7 +4814,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100K"
+		(property "Value" "39K"
 			(at 88.138 114.3 0)
 			(effects
 				(font
@@ -4794,7 +4823,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 88.138 114.3 90)
 			(effects
 				(font
@@ -4821,7 +4850,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25741"
+		(property "LCSC" "C23153"
 			(at 86.36 114.3 0)
 			(effects
 				(font
@@ -4830,7 +4859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "50V"
+		(property "Rating" "75V, 1%"
 			(at 88.138 116.7243 0)
 			(effects
 				(font
@@ -4848,7 +4877,7 @@
 		(instances
 			(project "pdlc"
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "R10")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -4961,7 +4990,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bbb8e109-b206-48a9-be52-4ae632c88d10")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR011"
 			(at 58.42 125.73 0)
 			(effects
 				(font
@@ -5011,7 +5040,7 @@
 		(instances
 			(project "pdlc"
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "#PWR013")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5071,6 +5100,15 @@
 			)
 		)
 		(property "LCSC" "C3188433"
+			(at 179.07 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "270"
 			(at 179.07 78.74 0)
 			(effects
 				(font
@@ -5148,7 +5186,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1495741-fa07-4c4c-9a1d-31551b2a35ad")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR09"
 			(at 109.22 81.28 0)
 			(effects
 				(font
@@ -5199,7 +5237,7 @@
 		(instances
 			(project "pdlc"
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "#PWR011")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -5215,7 +5253,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d338ec33-d3d1-478b-834c-df04f26896e8")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR08"
 			(at 58.42 80.01 0)
 			(effects
 				(font
@@ -5265,7 +5303,7 @@
 		(instances
 			(project "pdlc"
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "#PWR010")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5378,7 +5416,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7256104-a469-45dc-911e-0e02b38185e4")
-		(property "Reference" "D4"
+		(property "Reference" "D3"
 			(at 202.2475 58.2013 0)
 			(effects
 				(font
@@ -5447,7 +5485,7 @@
 		(instances
 			(project ""
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "D4")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -5462,7 +5500,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ec145ab4-d24c-4bb8-bad9-02488f13e988")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR06"
 			(at 119.38 66.04 0)
 			(effects
 				(font
@@ -5513,7 +5551,7 @@
 		(instances
 			(project ""
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "#PWR08")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5630,7 +5668,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa097c74-ba8e-4669-aa31-7e13626cdbe1")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR010"
 			(at 255.27 86.36 0)
 			(effects
 				(font
@@ -5681,7 +5719,7 @@
 		(instances
 			(project "pdlc"
 				(path "/72f173d9-ab39-48cf-8905-ad1bf955d73b/839ad8d3-a990-42e6-a0a5-e04c83a3aa31"
-					(reference "#PWR012")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)

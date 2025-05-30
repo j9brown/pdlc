@@ -59,8 +59,11 @@
         }
       ],
       "drc_exclusions": [
-        "courtyards_overlap|111825374|92525000|07b9d54c-fc93-4362-b1d6-242878f3924a|1c9216f0-bcdd-4f48-93d3-4076a09f232e",
-        "courtyards_overlap|113302063|86025000|2dac13c5-9d83-4dc6-8f70-5bef513ba1f9|4928975c-86f3-40aa-b51e-8a288532823d",
+        "clearance|101250000|98500000|355689b7-13bd-43f3-b3d0-99758be9a186|6de74002-8deb-4d2e-b038-8bca1d5bcb16",
+        "clearance|101250000|98500000|355689b7-13bd-43f3-b3d0-99758be9a186|868b35af-3027-4522-80d4-bcafdf472a22",
+        "clearance|93500000|98500000|d27c91b5-f747-4fbb-82f4-8935c916193d|ebf92bea-7c97-4fb8-8994-0b9efdff644f",
+        "clearance|93500000|98500000|d27c91b5-f747-4fbb-82f4-8935c916193d|ed67260c-b7bd-41cb-9c8d-2f90e3338b35",
+        "courtyards_overlap|115052063|86025000|2dac13c5-9d83-4dc6-8f70-5bef513ba1f9|4928975c-86f3-40aa-b51e-8a288532823d",
         "silk_edge_clearance|80000400|116039992|9df5fa3c-30fd-4216-a0b8-f81f1e6e628e|b12cc2e9-1c44-4f77-b227-5f16ec302215",
         "silk_edge_clearance|80000400|83960008|d82a0ea9-ba87-4f1f-8236-186dc4374271|f8064b5e-a1e5-4313-8415-991d90a04c0a",
         "silk_over_copper|82724074|83960000|f8064b5e-a1e5-4313-8415-991d90a04c0a|00000000-0000-0000-0000-000000000000",
@@ -557,11 +560,19 @@
       "/half-bridge A/OUT": "High Voltage",
       "/half-bridge B/OUT": "High Voltage",
       "/inverter/DVDD": "Power",
+      "/inverter/half-bridge A/HB": "High Voltage",
+      "/inverter/half-bridge A/HO": "High Voltage",
+      "/inverter/half-bridge A/LO": "High Voltage",
+      "/inverter/half-bridge B/HB": "High Voltage",
+      "/inverter/half-bridge B/HO": "High Voltage",
+      "/inverter/half-bridge B/LO": "High Voltage",
       "Net-(D1-A)": "Power",
       "Net-(D1-K)": "High Voltage",
       "Net-(D2-A)": "Power",
       "Net-(D2-K)": "High Voltage",
       "Net-(D3-A)": "High Voltage",
+      "Net-(Q2-S)": "High Voltage",
+      "Net-(Q4-S)": "High Voltage",
       "Net-(U1-GH)": "High Voltage",
       "Net-(U1-GL)": "High Voltage",
       "Net-(U2-CPH)": "Power",
@@ -640,7 +651,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -796,6 +807,14 @@
     [
       "26ff078d-157c-4fb2-a395-c13cadda3d9a",
       "inverter"
+    ],
+    [
+      "0e68590c-e46e-45ed-81ac-407449f7b98e",
+      "half-bridge A"
+    ],
+    [
+      "f8efed73-0983-4e2a-9960-8d3e6fada628",
+      "half-bridge B"
     ]
   ],
   "text_variables": {}

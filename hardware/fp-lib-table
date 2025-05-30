@@ -5,4 +5,5 @@
   (lib (name "3362P-1-502LF")(type "KiCad")(uri "${KIPRJMOD}/library/3362P-1-502LF")(options "")(descr ""))
   (lib (name "TBP01R1-508-06BE")(type "KiCad")(uri "${KIPRJMOD}/library/TBP01R1-508-06BE")(options "")(descr ""))
   (lib (name "Generic")(type "KiCad")(uri "${KIPRJMOD}/library/Generic/Generic.pretty")(options "")(descr ""))
+  (lib (name "1812L")(type "KiCad")(uri "${KIPRJMOD}/library/1812L/1812L.pretty")(options "")(descr ""))
 )
