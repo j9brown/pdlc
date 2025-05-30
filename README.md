@@ -27,14 +27,11 @@ The driver has the following major components:
 
 [View the schematics in PDF format](hardware/pdlc.pdf)
 
-<details>
-<summary>View the circuit board</summary>
+## Circuit board
 
 ![Front side of circuit board](hardware/pdlc-front.png)
 
 ![Back side of circuit board](hardware/pdlc-back.png)
-
-</details>
 
 ## Installation
 
