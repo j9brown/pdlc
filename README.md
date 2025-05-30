@@ -12,6 +12,7 @@ Here are some of the features of this PDLC driver board:
 - Outputs ~60 V AC with up to 18 W of power from a 10 to 16 VDC power supply
 - Can use a switch, relay, optocoupler, or transistor to remotely enable the driver
 - Includes built-in circuit protection for the supply and load
+- Power on indicator
 
 ## Design
 
@@ -46,6 +47,16 @@ Connect `OUTA` and `OUTB` to the PDLC film using 22 AWG (0.3 mm^2) wire or large
 Connect `EN` to one `GND` terminal via a switch circuit, via a short jumper wire, or by soldering the `ENABLE` jumper closed.  The `EN` terminal is active low so the driver turns on when `EN` is grounded and turn offs otherwise.  Use 24 AWG (0.2 mm^2) wire or larger to make the connection.  Smaller wires will work but may be too fragile for the terminals.
 
 The switch circuit carries less than 1 mA of current at 12 V DC nominal.  You can use many kinds of switching devices to close the circuit from `EN` to `GND` such as a simple SPST rocker switch, a relay, an optocoupler, or a transistor.
+
+If you would like to disable the power on indicator, cut the `JP1` jumper trace.
+
+## Usage
+
+After [installing the PDLC driver](#installation), provide power to the driver and activate the switch circuit.
+
+If everything is working as intended, the PDLC film will become clear and the power on indicator labeled `ON` will glow red (unless it has been disabled).
+
+If this does not happen, disconnect power then recheck your connections and the [recommended operational parameters](#recommended-operational-parameters-and-circuit-protection).
 
 ## Recommended operational parameters and circuit protection
 
