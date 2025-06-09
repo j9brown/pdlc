@@ -1,5 +1,7 @@
 # PDLC driver
 
+**Status: UNDER DEVELOPMENT**
+
 Drives [polymer dispersed liquid crystal (PDLC) film](https://en.wikipedia.org/wiki/Smart_glass#Polymer-dispersed_liquid-crystal_devices) from a 12 V DC nominal power supply.
 
 PDLC film is opaque when turned off and becomes clear when turned on.  For example, you can apply it to a window to replace a privacy curtain or to create a diffuse surface for a projection screen on demand.
@@ -14,9 +16,7 @@ Here are some of the features of this PDLC driver board:
 - Includes built-in circuit protection for the supply and load
 - Power on indicator
 
-## Design
-
-**Status: UNDER DEVELOPMENT**
+## Design synopsis
 
 The driver has the following major components:
 
