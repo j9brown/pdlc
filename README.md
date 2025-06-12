@@ -113,6 +113,10 @@ Here's some information about PDLC films that the driver has been tested with.
   - Power: < 5W / m^2 (manufacturer claim)
   - Capacitance: ~12 uF / m^2 (measured)
 
+## Design history
+
+v1.0: Initial prototype.  Uses a 555 timer and inverter to generate commutation waveforms.  Works well for small PDLC samples.  Can't drive larger panels without modification because it does not wait for the power-good signal to be asserted and the output capacitor to be sufficiently charged before energizing the panel so it hiccups.
+
 ## Notice
 
 The PDLC driver software, documentation, design, and all copyright protected artifacts are released under the terms of the [MIT license](LICENSE).
